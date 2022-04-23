@@ -1,0 +1,27 @@
+@import "_mixins";
+@import "_buttonpartial";
+
+$h1-color: blue;
+$h1-height: 50px;
+$h1-font-family: "Times New Roman", Times, serif;
+
+div {
+  border: 2px solid grey;
+  @include border-radius(20px);
+  width: 50%;
+  align-content: center;
+  text-align: center;
+  background-color: lighten($h1-color, 30%);
+  margin: 20px;
+  padding: 20px;
+
+  h1 {
+    color: $h1-color;
+    height: $h1-height;
+    font-family: $h1-font-family;
+    cursor: pointer;
+    &:hover {
+      color: black;
+    }
+  }
+}
